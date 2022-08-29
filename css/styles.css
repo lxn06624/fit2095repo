@@ -1,0 +1,51 @@
+body{
+    background-image: url('post-office.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+table,th,td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+.tr:nth-child(even) {background-color: #f2f2f2;}
+.th1
+{ background-color: #04AA6D;
+ color: white;}
+
+button{
+    padding: 15px;
+    width: 15%;
+}
+a:link{
+    color:gray
+}
+a:visited{
+    color:gray
+}
+/* mouse over link */
+a:hover{
+    color:red
+}
+/* select link */
+a:active{
+    color:blue
+}
+li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    padding-left: 530px;
+}
+h1{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
