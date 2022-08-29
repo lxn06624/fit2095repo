@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><b>Welcome to POMS(Week5 lab)</b></h1><br>
+    <h2>
+        <a href="./homepage">
+            <li>Home</li>
+        </a>
+        <a href="./addparcel">
+            <li>Add a new parcel</li>
+        </a>
+        <a href="./listparcels">
+            <li>List the parcels</li>
+        </a>
+        <a href="./updateparcel">
+            <li>Update the parcel</li>
+        </a>
+        <a href="./deleteparcel">
+            <li>Delete the parcel</li>
+        </a>
+        <a href="./deletebyweight">
+            <li>Delete the parcel by weight</li>
+        </a>
+        </h2>
+        <hr style="height:1px;border:none;border-top:1px solid #555555">
+        <div><b>Add a new parcel</b></div>
+    <form action="/newparcel" method="POST">
+    <table>
+        <tr>
+          <th>Sender</th>
+          <td><input type="text" name="sender" minlength="3" oninvalid="setCustomValidity('The character length must be more than 3');"
+            οninput="setCustomValidity('');"/></td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td><input type="text" name="address" minlength="3" oninvalid="setCustomValidity('The character length must be more than 3');"
+            οninput="setCustomValidity('');"/></td>
+        </tr>
+        <tr>
+            <th>Weight:</th>
+            <td><input type="number" name="weight" min="0" oninvalid="setCustomValidity('This value must be positive');"
+                οninput="setCustomValidity('');"/></td>
+        </tr>
+        <tr>
+            <th><label for="fragile">Fragile:</label></th>
+            <td>
+                <select name="fragile" id="fragile">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+            </td>
+        </tr>
+      </table>
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

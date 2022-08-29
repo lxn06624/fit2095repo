@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1><b>Welcome to POMS(Week5 lab)</b></h1><br>
+  <h2>
+    <a href="./homepage">
+      <li>Home</li>
+  </a>
+    <a href="./addparcel">
+        <li>Add a new parcel</li>
+    </a>
+    <a href="./listparcels">
+        <li>List the parcels</li>
+    </a>
+    <a href="./updateparcel">
+        <li>Update the parcel</li>
+    </a>
+    <a href="./deleteparcel">
+        <li>Delete the parcel</li>
+    </a>
+    <a href="./deletebyweight">
+      <li>Delete the parcel by weight</li>
+  </a>
+    </h2>
+    <hr style="height:1px;border:none;border-top:1px solid #555555">
+    <div><b>Delete the parcel</b></div>
+    <form action="/deleteparceldata" method="POST">
+        <table>
+            <tr>
+              <th>Parcel ID</th>
+              <td><input type="text" name="id"/></td>
+            </tr>
+            <tr>
+              <th>Parcel Sender</th>
+              <td><input type="text" name="sender"/></td>
+            </tr>
+          </table>
+            <br>
+            <button>Submit</button>
+        </form>
+</body>
+
+</html>
